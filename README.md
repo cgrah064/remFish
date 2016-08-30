@@ -1,3 +1,3 @@
 # remFish
 
-# My remote aquaponics control interface.
+# Remote aquaponics control interface
