@@ -280,7 +280,7 @@ option:focus {
  
 /*footer*/
 footer {
-  font-family: 'PT Serif', serif;
+  font-family: 'consolas';
   font-style: italic;
   text-align: center;
   font-size: 14px;
