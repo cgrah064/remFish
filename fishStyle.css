@@ -57,7 +57,7 @@ table {
 
 /*begin our styles*/
 body {
-  font: 16px/1.4em 'PT Sans', sans-serif;;
+  font: 16px/1.4em 'consolas';
   color: #1c1c1c;
 }
 p,ul {
@@ -76,7 +76,7 @@ h1 {
  
 }
 h2 {
-  font-family: 'PT Serif', serif;
+  font-family: 'consolas';
   font-size: 32px;
   line-height: 1.4em;
   margin: 0 0 .4em;
