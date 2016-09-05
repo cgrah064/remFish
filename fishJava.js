@@ -5,7 +5,7 @@ $(document).ready(function(){
     alert("The click worked. To this extent at least.")
     $.ajax({
       type: "post",
-      url: "http://172.16.0.15/test.py/samplePyFunction",
+      url: "http://192.168.0.22/test.py/samplePyFunction",
       data: {
         "tableName": "test", //$('#dbTable option:selected').text(),
         "currentQuery": curQuery //.join(',')	//if you want to pass a list, join it with a comma and use var.split(',') on the server side
