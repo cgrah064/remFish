@@ -1,7 +1,8 @@
 window.curQuery = "SELECT * FROM test" //+$('#dbTable option:selected').text()
 
 $(document).ready(function(){
-  $("#getData").click(function(){ 
+  $("#getData").click(function(){
+    alert("The click worked. To this extent at least.")
     $.ajax({
       type: "post",
       url: "http://172.16.0.15/test.py/samplePyFunction",
@@ -12,6 +13,8 @@ $(document).ready(function(){
       dataType: "text"
     }).done(function(result){
       $("#querySpan").html(result); //this replaces an html element with your string result
+      console.log("result is "+result)
     });
+    alert("The click worked. To this extent at least.(2)")
   });
 });
