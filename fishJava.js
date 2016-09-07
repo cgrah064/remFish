@@ -46,7 +46,7 @@ var valueline = d3.line()
 // append the svg obgect to the body of the page
 // appends a 'group' element to 'svg'
 // moves the 'group' element to the top left margin
-var svg = d3.select("#waterLevelGraph").append("svg")
+var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
@@ -87,15 +87,8 @@ d3.csv("data.csv", function(error, data) {
   // add the Y Axis
   svg.append("g")
       .call(d3.axisLeft(y));
-});
 
 });
 
-/*
-  $("#waterLevelGraph").click(function(){
-  	alert("We attempted to make a graph.");
-  	makeGraph();
-  	alert("We attempted to make a graph.2");
-  });
+});
 
-*/
