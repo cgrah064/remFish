@@ -1,7 +1,12 @@
 $(document).ready(function(){
 // set the dimensions and margins of the graph
+if ($( document ).width() > 450) {
+    var condWidth = 450;
+} else {
+    var condWidth = $( document ).width();
+}
 var margin = {top: 20, right: 20, bottom: 30, left: 50},
-    width = $( document ).width() - margin.left - margin.right,
+    width = condWidth - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
 
 // parse the date / time
