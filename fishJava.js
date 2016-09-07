@@ -18,6 +18,7 @@ $(document).ready(function(){
 });
 
 
+/*
 $(document).ready(function(){
 /* implementation heavily influenced by http://bl.ocks.org/1166403 */
 		
@@ -80,3 +81,4 @@ $(document).ready(function(){
 			// do this AFTER the axes above so that the line is above the tick-lines
   			graph.append("svg:path").attr("d", line(data));
 });
+*/
