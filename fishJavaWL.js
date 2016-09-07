@@ -1,7 +1,7 @@
 $(document).ready(function(){
 // set the dimensions and margins of the graph
-if ($( document ).width() > 450) {
-    var condWidth = 450;
+if ($( document ).width() > 750) {
+    var condWidth = 750;
 } else {
     var condWidth = $( document ).width();
 }
