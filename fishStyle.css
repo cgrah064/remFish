@@ -277,33 +277,18 @@ option:focus {
   color: #1c1c1c;
   background: #ccc;
 }
-/* tell the SVG path to be a thin blue line without any area fill */
-			path {
-				stroke: steelblue;
-				stroke-width: 1;
-				fill: none;
-			}
-			
-			.axis {
-			  shape-rendering: crispEdges;
-			}
 
-			.x.axis line {
-			  stroke: lightgrey;
-			}
+/*svg stuff*/
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
 
-			.x.axis .minor {
-			  stroke-opacity: .5;
-			}
+.area {
+  fill: lightsteelblue;
+}
 
-			.x.axis path {
-			  display: none;
-			}
-
-			.y.axis line, .y.axis path {
-			  fill: none;
-			  stroke: #000;
-			}
  
 /*footer*/
 footer {
