@@ -19,7 +19,8 @@ $(document).ready(function(){
 
 
 
-function makeGraph () {
+//function makeGraph () {
+$(document).ready(function(){
 // set the dimensions and margins of the graph
 var margin = {top: 20, right: 20, bottom: 30, left: 50},
     width = 960 - margin.left - margin.right,
@@ -88,15 +89,14 @@ d3.csv("data.csv", function(error, data) {
   svg.append("g")
       .call(d3.axisLeft(y));
 });
-	
-}
 
+});
 
-$(document).ready(function(){
+/*
   $("#waterLevelGraph").click(function(){
   	alert("We attempted to make a graph.");
   	makeGraph();
   	alert("We attempted to make a graph.2");
   });
-});
 
+*/
