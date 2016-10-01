@@ -1,0 +1,15 @@
+SQL notes
+
+CREATE DATABASE testdb;
+use testdb
+
+CREATE TABLE test (
+entry INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+user VARCHAR NOT NULL, 
+comment VARCHAR NOT NULL, 
+timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+INSERT INTO test (user, comment)
+VALUES
+("fishAdmin", "this is a test!");
