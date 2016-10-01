@@ -13,3 +13,7 @@ timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 INSERT INTO test (user, comment)
 VALUES
 ("fishAdmin", "this is a test!");
+
+INSERT INTO test (user, comment)
+VALUES
+("fishAdmin", "this is another test!");
