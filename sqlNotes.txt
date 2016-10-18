@@ -17,3 +17,5 @@ VALUES
 INSERT INTO test (user, comment)
 VALUES
 ("fishAdmin", "this is another test!");
+
+USB fix: sudo dosfsck -a /dev/sda1
