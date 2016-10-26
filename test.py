@@ -28,7 +28,7 @@ def setMotion01(req):
     postData = req.form
     motion01 = str(postData['motion01'].value)
     htmlStr = '<p>motion01 was '+str(motion01)+'</p>'
-    if motion01 == 1:
+    if motion01 == '1':
         subprocess.call('pyMotionStart.sh')
     else:
         subprocess.call('pyMotionStop.sh')
