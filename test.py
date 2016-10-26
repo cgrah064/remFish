@@ -1,5 +1,6 @@
 #!/usr/bin/python
 import MySQLdb
+import subprocess
 
 def samplePyFunction(req):
     postData = req.form
@@ -22,6 +23,23 @@ def samplePyFunction(req):
         htmlStr += '</tr>'
     htmlStr += '</table>'
     return htmlStr
+
+def setMotion01(req):
+    postData = req.form
+    motion01 = str(postData['motion01'].value)
+    htmlStr = '<p>motion01 was '+str(motion01)+'</p>'
+    if motion01 == 1:
+        subprocess.call('pyMotionStart.sh')
+    else:
+        subprocess.call('pyMotionStop.sh')
+    return htmlStr
+
+def getMotion01
+    output = subprocess.check_output(['ps', '-A'])
+    if 'motion' in output:
+        return 'Motion is running'
+    else:
+        return 'Motion is not running'
 
 if __name__ == "__main__":
     samplePyFunction(req)
