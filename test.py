@@ -34,7 +34,7 @@ def setMotion01(req):
         subprocess.call('pyMotionStop.sh')
     return htmlStr
 
-def getMotion01
+def getMotion01():
     output = subprocess.check_output(['ps', '-A'])
     if 'motion' in output:
         return '<div>Motion is running</div>'
