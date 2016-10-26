@@ -18,16 +18,29 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $("#motionInput").click(function(){
+  $("#motionGet").click(function(){
+    $.ajax({
+      type: "get",
+      url: "test.py/getMotion01",
+      dataType: "text"
+    }).done(function(result){
+      $("#outSpan0").html(result);
+      console.log("result is "+result)
+    });
+  });
+});
+
+$(document).ready(function(){
+  $("#motionOn").click(function(){
     $.ajax({
       type: "post",
-      url: "test.py/samplePyFunction",
+      url: "test.py/setMotion01",
       data: {
-        "motion01": $('#dbTable option:selected').text()
+        "motion01": "1"
       },
       dataType: "text"
     }).done(function(result){
-      $("#querySpan").html(result);
+      $("#outSpan1").html(result);
       console.log("result is "+result)
     });
   });
