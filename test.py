@@ -37,9 +37,9 @@ def setMotion01(req):
 def getMotion01
     output = subprocess.check_output(['ps', '-A'])
     if 'motion' in output:
-        return 'Motion is running'
+        return '<div>Motion is running</div>'
     else:
-        return 'Motion is not running'
+        return '<div>Motion is not running</div>'
 
 if __name__ == "__main__":
     samplePyFunction(req)
