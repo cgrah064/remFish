@@ -17,3 +17,20 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $("#motionInput").click(function(){
+    $.ajax({
+      type: "post",
+      url: "test.py/samplePyFunction",
+      data: {
+        "motion01": $('#dbTable option:selected').text()
+      },
+      dataType: "text"
+    }).done(function(result){
+      $("#querySpan").html(result);
+      console.log("result is "+result)
+    });
+  });
+});
+
+
