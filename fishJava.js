@@ -18,6 +18,17 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+  $.ajax({
+    type: "get",
+    url: "test.py/getMotion01",
+    dataType: "text"
+  }).done(function(result){
+    $("#outSpan0").html(result);
+    console.log("result is "+result)
+  });
+});
+
+$(document).ready(function(){
   $("#motionGet").click(function(){
     $.ajax({
       type: "get",
@@ -46,4 +57,18 @@ $(document).ready(function(){
   });
 });
 
-
+$(document).ready(function(){
+  $("#motionOff").click(function(){
+    $.ajax({
+      type: "post",
+      url: "test.py/setMotion01",
+      data: {
+        "motion01": "0"
+      },
+      dataType: "text"
+    }).done(function(result){
+      $("#outSpan2").html(result);
+      console.log("result is "+result)
+    });
+  });
+});
