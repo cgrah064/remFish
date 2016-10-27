@@ -5,7 +5,7 @@ if ($( document ).width() > 750) {
 } else {
     var condWidth = $( document ).width();
 }
-var margin = {top: 20, right: 80, bottom: 30, left: 50},
+var margin = {top: 20, right: 20, bottom: 30, left: 50},
     width = condWidth - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
     
