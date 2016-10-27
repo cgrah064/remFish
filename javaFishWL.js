@@ -7,9 +7,9 @@ if ($( document ).width() > 750) {
 }
 
 var svg = d3.select("#waterLevelGraph").append("svg"),
-    margin = {top: 20, right: 20, bottom: 30, left: 50},
+    margin = {top: 20, right: 80, bottom: 30, left: 50},
     width = condWidth - margin.left - margin.right,
-    height = 300 - margin.top - margin.bottom,
+    height = 500 - margin.top - margin.bottom,
     g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 var parseTime = d3.timeParse("%Y%m%d");
