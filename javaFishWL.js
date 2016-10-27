@@ -46,12 +46,12 @@ d3.tsv("data2.csv", type, function(error, data) {
 
   z.domain(cities.map(function(c) { return c.id; }));
 
-  svg.append("g")
+  g.append("g")
       .attr("class", "axis axis--x")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x));
 
-  svg.append("g")
+  g.append("g")
       .attr("class", "axis axis--y")
       .call(d3.axisLeft(y))
     .append("text")
