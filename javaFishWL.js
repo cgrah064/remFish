@@ -7,7 +7,7 @@ if ($( document ).width() > 750) {
 }
 var margin = {top: 20, right: 80, bottom: 30, left: 50},
     width = condWidth - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    height = 300 - margin.top - margin.bottom;
     
 var svg = d3.select("#waterLevelGraph").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -59,7 +59,7 @@ d3.tsv("data.tsv", type, function(error, data) {
       .attr("y", 6)
       .attr("dy", "0.71em")
       .attr("fill", "#000")
-      .text("Temperature, ºF");
+      .text("Percent, %");
 
   var city = g.selectAll(".city")
     .data(cities)
