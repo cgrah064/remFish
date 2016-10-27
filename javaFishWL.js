@@ -1,7 +1,15 @@
-var svg = d3.select("svg"),
-    margin = {top: 20, right: 80, bottom: 30, left: 50},
-    width = svg.attr("width") - margin.left - margin.right,
-    height = svg.attr("height") - margin.top - margin.bottom,
+$(document).ready(function(){
+// set the dimensions and margins of the graph
+if ($( document ).width() > 750) {
+    var condWidth = 750;
+} else {
+    var condWidth = $( document ).width();
+}
+
+var svg = d3.select("#waterLevelGraph").append("svg"),
+    margin = {top: 20, right: 20, bottom: 30, left: 50},
+    width = condWidth - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom,
     g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 var parseTime = d3.timeParse("%Y%m%d");
@@ -75,3 +83,5 @@ function type(d, _, columns) {
   for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
   return d;
 }
+
+});
