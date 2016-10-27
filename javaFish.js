@@ -1,4 +1,5 @@
 window.curQuery = "SELECT * FROM test" //+$('#dbTable option:selected').text()
+window.pathname = window.location.pathname
 
 $(document).ready(function(){
   $("#getData").click(function(){
@@ -18,14 +19,16 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $.ajax({
-    type: "get",
-    url: "test.py/getMotion01",
-    dataType: "text"
-  }).done(function(result){
-    $("#outSpan0").html(result);
-    console.log("result is "+result)
-  });
+  if (pathname.includes("cameraView")) {
+    $.ajax({
+      type: "get",
+      url: "test.py/getMotion01",
+      dataType: "text"
+    }).done(function(result){
+      $("#outSpan0").html(result);
+      console.log("result is "+result)
+    });
+  }
 });
 
 $(document).ready(function(){
