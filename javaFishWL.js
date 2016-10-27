@@ -5,11 +5,13 @@ if ($( document ).width() > 750) {
 } else {
     var condWidth = $( document ).width();
 }
-
-var svg = d3.select("#waterLevelGraph").append("svg"),
-    margin = {top: 20, right: 80, bottom: 30, left: 50},
+var margin = {top: 20, right: 80, bottom: 30, left: 50},
     width = condWidth - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom,
+    height = 500 - margin.top - margin.bottom;
+    
+var svg = d3.select("#waterLevelGraph").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom),
     g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 var parseTime = d3.timeParse("%Y%m%d");
