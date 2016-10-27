@@ -5,7 +5,7 @@ if ($( document ).width() > 750) {
 } else {
     var condWidth = $( document ).width();
 }
-var margin = {top: 20, right: 20, bottom: 30, left: 50},
+var margin = {top: 20, right: 80, bottom: 30, left: 50},
     width = condWidth - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
     
@@ -46,12 +46,12 @@ d3.tsv("data2.csv", type, function(error, data) {
 
   z.domain(cities.map(function(c) { return c.id; }));
 
-  g.append("g")
+  svg.append("g")
       .attr("class", "axis axis--x")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x));
 
-  g.append("g")
+  svg.append("g")
       .attr("class", "axis axis--y")
       .call(d3.axisLeft(y))
     .append("text")
