@@ -103,3 +103,10 @@ VALUES ("waterMin", "0");
 INSERT INTO water (dataType, value)
 VALUES ("drainMin", "0");
 
+INSERT INTO water (dataType, value)
+VALUES ("fishHeight", "0");
+INSERT INTO water (dataType, value)
+VALUES ("waterHeight", "0");
+INSERT INTO water (dataType, value)
+VALUES ("drainHeight", "0");
+
