@@ -208,10 +208,14 @@ select {
   padding: 5px 0;
 }
 .btn {
+  background: #1c1c1c;
+  color: #fff;
   text-align: left;
   width: 100%
 }
 .dropdown-menu {
+  background: #1c1c1c;
+  color: #fff;
   text-align: left;
   width: 100%
 }
