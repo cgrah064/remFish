@@ -24,11 +24,11 @@ $(document).ready(function(){
         $("#plantOpts").toggle();
     });
 });
-/*
+
 $(document).ready(function(){
     $(".opts").hide();
 });
-*/
+
 $(document).ready(function(){
   if (pathname.includes("cameraView")) {
     $.ajax({
