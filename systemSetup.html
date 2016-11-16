@@ -36,7 +36,17 @@
     <article>
       <h2>Automatic Setup</h2>
       <p>Setup your tank maintanence based on the number of fish and plants in your system.</p>
-      <div class="comment">These are our expected user inputs:</div>
+      <form>
+        <div class="form-group">
+          <input type="number" class="form-control" id="nFish" placeholder="Number of fish">
+          <label for="getData">Amount of Plant Life</label>
+          <select class="form-control" id="getData">
+            <option>not planted</option>
+            <option>planted</option>
+            <option>heavily planted</option>
+          </select>
+        </div>
+      </form>
       <nav id="content_nav">
         <ul> 
           <li><a href="">Number of Fish</a></li>
