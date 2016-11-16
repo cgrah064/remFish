@@ -19,6 +19,12 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+    $("#plantSel").click(function(){
+        $("#plantOpts").toggle();
+    });
+});
+
+$(document).ready(function(){
   if (pathname.includes("cameraView")) {
     $.ajax({
       type: "get",
