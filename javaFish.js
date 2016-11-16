@@ -19,7 +19,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $("#plantSel").click(function(){
+    $("#plantSel").click(function(e){
         e.preventDefault();
         $("#plantOpts").toggle();
     });
