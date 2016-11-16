@@ -208,9 +208,11 @@ select {
   padding: 5px 0;
 }
 .btn {
+  text-align: left;
   width: 100%
 }
 .dropdown-menu {
+  text-align: left;
   width: 100%
 }
 option {
