@@ -110,3 +110,19 @@ VALUES ("waterHeight", "0");
 INSERT INTO water (dataType, value)
 VALUES ("drainHeight", "0");
 
+INSERT INTO water (dataType, value)
+VALUES ("servoPin", "18");
+INSERT INTO water (dataType, value)
+VALUES ("lightsPin0", "13");
+INSERT INTO water (dataType, value)
+VALUES ("lightsPin1", "26");
+INSERT INTO water (dataType, value)
+VALUES ("lightsPin2", "23");
+INSERT INTO water (dataType, value)
+VALUES ("fanPin", "24");
+INSERT INTO water (dataType, value)
+VALUES ("fishPin", "12");
+INSERT INTO water (dataType, value)
+VALUES ("waterPin", "16");
+INSERT INTO water (dataType, value)
+VALUES ("drainPin", "2");
