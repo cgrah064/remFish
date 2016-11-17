@@ -229,6 +229,15 @@ select {
   background: #ccc;
 }
 */
+.btn {
+  text-align: left;
+  width: 100%
+}
+.dropdown-menu {
+  text-align: left;
+  width: 100%
+}
+
 option {
   display: block;
   background-color: #1c1c1c;
