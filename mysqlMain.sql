@@ -126,3 +126,5 @@ INSERT INTO water (dataType, value)
 VALUES ("waterPin", "16");
 INSERT INTO water (dataType, value)
 VALUES ("drainPin", "2");
+INSERT INTO water (dataType, value)
+VALUES ("supplyPin", "25");
